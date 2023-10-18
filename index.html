@@ -46,6 +46,8 @@
       <section id="hero">
         <div class="hero d-flex align-items-center justify-content-center text-white text-center mb-0">
           <h1 class="display-1">Main heading for page</h1>
+        </div>
+        <div class="text-white text-center">
           <p class="lead">Some lead text or subtitle</p>
         </div>
       </section>
@@ -67,12 +69,14 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section class="two-column-section bg-dark">
+      <section class="two-column-section bg-dark text-left">
         <!-- Use a container class that will set a max-width at each breakpoint -->
         <div class="container text-white text-center pt-4 pb-4">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
+          <div class="row text-start">
           <h2 class="mb-4">Section heading</h2>
           <!-- Using the grid system, adjust the following so that the text in both divs are 100% until the small breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands -->
+          </div>
           <div class="row">
             <div class="col-12 col-sm-6">
               <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
@@ -87,30 +91,66 @@
       <!-- Add padding to the top and bottom of the section -->
       <section id="cards">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container pt-5 pb-4">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Section heading</h2>
+          <h2 class="mb-4">Section heading</h2>
 
           <!-- Using the grid system, adjust the following so that the cards are 100% until the small breakpoint where it then divides to use 6 columns each, then again at the large breakpoint each card will span 3 columns each -->
           <!-- Add a gutter y using the value 4 -->
-          <div>
-            <div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Use the card component and set to use the dark bg with light text -->
               <!-- Update snippet to include the image being used in the screenshot -->
               <!-- Update button to use light button theme -->
 
+              <div class="card bg-dark text-white" style="width: 18rem;">
+                <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary bg-light text-black border-0">Read more</a>
+                </div>
+              </div>
+
             </div>
 
-            <div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
+              <div class="card bg-dark text-white" style="width: 18rem;">
+                <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary bg-light text-black border-0">Read more</a>
+                </div>
+              </div>
+
             </div>
 
-            <div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
+              <div class="card bg-dark text-white" style="width: 18rem;">
+                <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary bg-light text-black border-0">Read more</a>
+                </div>
+              </div>
+
             </div>
 
-            <div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
+              <div class="card bg-dark text-white" style="width: 18rem;">
+                <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary bg-light text-black border-0">Read more</a>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
