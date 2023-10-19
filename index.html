@@ -19,16 +19,16 @@
 
         Adjust the nav to be using the dark color theme instead of default in snippet. -->
 
-        <nav class="navbar navbar-expand-md md-body-tertiary navbar-dark bg-dark">
-          <div class="container-fluid">
+        <nav class="navbar navbar-expand-md justify-content-center align-items-center bg-dark" data-bs-theme="dark">
+          <div class="container">
             <a class="navbar-brand" href="#">Company branding</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
-                <li class="nav-item active">
-                  <a class="nav-link active" aria-current="page" href="#">Link 1</a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Link 1</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Link 2</a>
@@ -44,20 +44,23 @@
 
     <main>
       <section id="hero">
-        <div class="hero d-flex align-items-center justify-content-center text-white text-center mb-0">
-          <h1 class="display-1">Main heading for page</h1>
+        <div class="container">
+          <div class="d-flex justify-content-center align-items-center">
+            <div class="text-white text-center">
+            <h1 class="display-1">Main heading for page</h1>
+            <p class="lead">Some lead text or subtitle</p>
+            </div>
+          </div>
         </div>
-        <div class="text-white text-center">
-          <p class="lead">Some lead text or subtitle</p>
         </div>
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
-      <section id="intro">
+      <section id="intro" class="py-4">
         <!-- Use a container class that will set a max-width at each breakpoint -->
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
           <!-- Using the grid system, adjust the following so that the text is 100% until the large breakpoint when it will then span 10 columns -->
-        <div class="container pt-4 pb-4">
+        <div class="container">
           <div class="row">
             <div class="col-12 col-lg-10">
               <h2 class="mb-4">Section heading</h2>
@@ -69,9 +72,9 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section class="two-column-section bg-dark text-left">
+      <section class="two-column-section bg-dark text-left text-white py-4">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div class="container text-white text-center pt-4 pb-4">
+        <div class="container text-center">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
           <div class="row text-start">
           <h2 class="mb-4">Section heading</h2>
@@ -89,21 +92,21 @@
       </section>
 
       <!-- Add padding to the top and bottom of the section -->
-      <section id="cards">
+      <section id="cards" class="py-4">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div class="container pt-5 pb-4">
+        <div class="container">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
           <h2 class="mb-4">Section heading</h2>
 
           <!-- Using the grid system, adjust the following so that the cards are 100% until the small breakpoint where it then divides to use 6 columns each, then again at the large breakpoint each card will span 3 columns each -->
           <!-- Add a gutter y using the value 4 -->
-          <div class="row">
+          <div class="row gy-4">
             <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Use the card component and set to use the dark bg with light text -->
               <!-- Update snippet to include the image being used in the screenshot -->
               <!-- Update button to use light button theme -->
 
-              <div class="card bg-dark text-white" style="width: 18rem;">
+              <div class="card bg-dark text-white">
                 <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -116,7 +119,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
-              <div class="card bg-dark text-white" style="width: 18rem;">
+              <div class="card bg-dark text-white">
                 <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -129,7 +132,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
-              <div class="card bg-dark text-white" style="width: 18rem;">
+              <div class="card bg-dark text-white">
                 <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -142,7 +145,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3 mb-4">
               <!-- Card goes here -->
-              <div class="card bg-dark text-white" style="width: 18rem;">
+              <div class="card bg-dark text-white">
                 <img src="images/abstract.jpg" class="card-img-top" alt="Card image">
                 <div class="card-body">
                   <h5 class="card-title">Card title</h5>
@@ -158,29 +161,30 @@
 
       <!-- Add padding to the top and bottom of the section -->
       <!-- Set section background color to use the dark theme with light text -->
-      <section>
+      <section class="bg-dark text-white">
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container py-4">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Some heading</h2>
+          <h2 class="mb-4">Some heading</h2>
           <!-- Using the grid system, adjust the first image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
-          <div>
-            <div>
+  
+          <div class="row mb-4 d-flex align-items-center">
+            <div class="col-12 col-lg-6">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" class="img-fluid align-self-center" alt="First image">
             </div>
-            <div>
+            <div class="col-12 col-lg-6">
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
             </div>
           </div>
           <!-- Using the grid system, adjust the second image and text are 100% until the large breakpoint where it then divides into 2 evenly distributed columns and stays that way as the screen expands. -->
           <!-- For the two pieces of content here, swap the order using a flex utility class  -->
-          <div>
-            <div>
+          <div class="row mb-4 d-flex align-items-center">
+            <div class="col-12 col-lg-6 order-lg-2">
               <!-- Adjust the img with a class to make it responsive (fluid) -->
-              <img src="images/abstract.jpg" alt="">
+              <img src="images/abstract.jpg" class="img-fluid align-self-center" alt="Second image">
             </div>
-            <div>
+            <div class="col-12 col-lg-6">
               <div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem voluptates dolore necessitatibus eius? Deserunt excepturi pariatur assumenda nemo laudantium fugit aliquid mollitia? Reiciendis consequuntur distinctio aperiam magni magnam asperiores.</p>
               </div>
@@ -192,19 +196,23 @@
       <!-- Add padding to the top and bottom of the section -->
       <section>
         <!-- Use a container class that will set a max-width at each breakpoint -->
-        <div>
+        <div class="container pt-4 pb-4">
           <!-- Adjust all h2 headings to have a margin bottom using the value 4 -->
-          <h2>Pick any Bootstrap component and explore</h2>
+          <h2 class="mb-4">Pick any Bootstrap component and explore</h2>
           <p>Within the available space, choose any component from Bootstrap and showcase it here. It can be as simple or complicated as you like but must stay within the div below.</p>
           <div>
             <!-- Place component here.  -->
+
+
+
+            
           </div>
         </div>
       </section>
     </main>
 
     <!-- Set background color to use the dark theme with light text -->
-    <footer>
+    <footer class="bg-dark text-white">
       <!-- Use a container class that will set a max-width at each breakpoint -->
       <!-- Center align text -->
       <!-- Add padding to the top and bottom using value 3 -->
